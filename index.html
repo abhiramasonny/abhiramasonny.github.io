@@ -1,36 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhiram's Coding Blog</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Abhiram's Coding Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-projects">My Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <ul id="about-me-info"></ul>
-        </section>
-        <section id="my-projects">
-            <h2>My Projects</h2>
-            <ul id="my-projects-info"></ul>
-        </section>
-        <!-- Additional sections for more information can be added here -->
-    </main>
-    <footer>
-        <p>&copy; 2023 Abhiram's Coding Blog. All rights reserved.</p>
+  <head>
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Abhirama Sonny" />
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <!-- Webpage Title -->
+    <title>Abhirama Sonny</title>
+
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">Abhirama Sonny</span>
+          <span class="site-description">Programmer • Web Developer • AI Engineer</span>
+        </h1>
+        <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/abhirama-sonny-90452127b/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="https://github.com/abhiramasonny">
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Résumé" target="_blank" href="#">
+            <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:abhirama.sonny@gmail.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i
+          ></a>
+        </div>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+        <h1>My Story</h1>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="./assets/img/webp/Professional-Picture-Me.webp"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+          <img
+            src="./assets/img/jpg/Professional-Picture-Me.jpg"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+        </picture>
+        <p>
+          Hi! I am Abhirama Sonny. I am a 14 year old high-school freshman at the Lowery Freshman Center. I have a strong intrest in Computer Science, with intent to major in
+          Computer Science and ML. I also have knowledge in Web-Dev, having built projects regarding it. 
+          I am interested in exploring the fields of Software Engineering, Data Science, Machine Learning, and Web-Dev.
+          <br>
+          Scroll down to learn a bit about me.
+        </p>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech">
+          <h2>Languages</h2>
+          <i class="devicon-python-plain colored"></i>
+          <i class="devicon-java-plain-wordmark colored"></i>
+          <i class="devicon-c-plain colored"></i>
+          <i class="devicon-javascript-plain colored"></i>
+          <p>The languages I use most often for my projects and the ones I am most proficient in.</p>
+        </div>
+
+        <!-- Technology Stack #4: Tools -->
+        <div class="tech">
+          <h2>Tools</h2>
+          <i class="devicon-git-plain-wordmark colored"></i>
+          <i class="devicon-visualstudio-plain"></i>
+          <i class="devicon-github-plain-wordmark colored"></i>
+          <p>The tools I use for version control and code editing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="user-details">
+        <h1>Featured Projects</h1>
+      </div>
+
+      <!-- User Project #1: ImageMatcher -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/jpg/ImageMatcher.jpg" alt="Personal Website" />
+            <img alt="Img-Matching Website" src="./assets/img/jpg/ImageMatcher.jpg" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>ELO Website</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg"
+              style="filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
+            />
+            &nbsp;
+            <img
+              height="35"
+              width="35"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+            />
+            &nbsp;
+            <img
+            height="32"
+            width="32"
+            src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg"
+            style="filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
+          />
+          </div>
+          <p style="text-align: justify">
+            I developed a NodeJS-based full-stack website hosted on webhostapp. It's a socialmedia based project inspired by TheSocialNetwork. You can choose who looks better between two options displayed on the screen, and the ELO system ranks the images based on user input. Please note that if you do visit the website, the images are quite frightful.
+          </p>
+          <a class="project-link" target="_blank" href="https://imagematcher.000webhostapp.com/index.html">Check it out!</a>
+        </div>
+      </div>
+
+      <!-- User Project #2: Summer 2020 Project -->
+      <div class="user-projects" style="align-self: center;">
+        <div class="images-left">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/jpg/Jaithon.jpg" alt="Jaithon" />
+            <img alt="Jaithon" src="./assets/img/jpg/Jaithon.jpg" />
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Jaithon</h3>
+          <img
+            height="32"
+            width="32"
+            src="https://unpkg.com/simple-icons@3.4.0/icons/c.svg"
+            style="filter: invert(25%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+          />
+          &nbsp;
+          &nbsp;
+          <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          <p style="text-align: justify">
+            I created my own programming language. The purpose of this language is to help educate young children how to code. My language has very basic syntex similar to the english language just like python. This helps kids bridge the gap from no knowledge to beginner. Jaithon created for a Hackathon which it won 2nd place out of 500 contestors. There is a calculator program created in my language to your left.
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/abhiramasonny/jaithon"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #3: COVID-19 Tracker App -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/jpg/ChessEngine.jpg" alt="COVID-19 Tracker App" />
+            <img alt="COVID-19 Tracker App" src="./assets/img/jpg/ChessEngine.jpg" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>Chess Engine</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg"
+              style="filter: invert(25%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+            />
+          </div>
+          <p style="text-align: justify">
+            I created a Chess engine that uses the Minimax algorithm combined with a predefined openings book to try to get the best move in the position. This project took me many hours to complete and it ended up having a final depth of 5. The depth can always change, but on my computer depth 5 ran the most smoothly.
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/abhiramasonny/ChessAI">
+            Check it out!
+          </a>
+        </div>
+      </div>
+
+      <!-- Use Project #4: Valuto: Account Management System -->
+      <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/img/jpg/A*.jpg"
+              alt="Valuto: Account Management System"
+            />
+            <img alt="Valuto: Account Management System" src="./assets/img/jpg/A*.jpg" />
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>A* algorithm</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg"
+              style="filter: invert(25%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+            />
+          </div>
+          <p style="text-align: justify">
+            This is a project I created back in 2020. This utilizes the A* Algorithm and finds the shortest path in any given position. Combined with a basic GUI, you have a toy application that finds the shortest path in a maze.
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/AVS1508/Valuto-Account-Management-System">
+            Check it out!
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Abhirama Sonny, 2023</p>
     </footer>
-    <script src="main.js"></script>
-</body>
+
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
