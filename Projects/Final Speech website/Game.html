@@ -1,0 +1,152 @@
+<html>
+<head>
+    <title>Игра "Кто быстрее"</title>
+    <meta charset="UTF-8"/>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+        }
+        .param {
+            width: 400px;
+            height: 300px;
+            margin: 30px auto 0 auto;
+            text-align: left;
+        }
+        .param input {
+            float: right;
+        }
+        .table {
+            margin: 0 auto;
+        }
+        .table div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            float: left;
+            margin: 3px;
+        }
+        button.gen {
+            width: 100%;
+            height: 40px;
+        }
+        .startgame {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #000;
+            text-align: center;
+            background: red;
+            margin: 10px auto;
+        }
+        .table p {
+            text-align: center;
+            padding-top: 30px;
+            font-size: 50px
+        }
+        .active {
+            background: red;
+        }
+        .nactive {
+            background: black;
+        }
+    </style> 
+    <script>
+        $(document).ready(function() {
+            // start Генерация таблицы игры
+            $('.gen').click(function() { // условие по клику на кнопку gen
+                width = $('#width').val(); // значение поля width
+                height = $('#height').val(); // значение поля height
+                speed = $('#speed').val(); // значение поля speed
+                $('.table p').remove(); // очистка содежимого таблицы от р
+                $('.table div').remove(); // очистка содежимого таблицы от div
+                if ( width != '' && height != '' && speed != '' ) { // проверка на не пустые input
+                    tab = width*height; // количество ячеек
+                    var csswidth = 58*width+'px'; // ширина блока
+                    var cssheight = 58*height+'px'; // высота блока
+                    $('.table').width(csswidth); // устанавлеваем ширина блока
+                    $('.table').height(cssheight); // устанавлеваем высота блока
+                    for (var i = 0; i < tab; i++) { // цикл наполнения таблицы
+                    var div = document.createElement('div');
+                        div.setAttribute("id", i+1);
+                      $('.table').append(div);
+                    }
+                    $('input').prop('disabled', true); // делаем input не активным
+                   // $('.startgame').addClass("active");
+                } 
+                else {
+                    $('.table').append('<p>Введите все параметры</p>'); // если какой то input пустой выводим сообщение
+                }
+            });
+            // end Генерация таблицы игры ------------------
+            // start основная функция игры
+            $('.startgame').click(function() {
+            if ( $(".table div").is("div") ) {    
+            $('button').css("display", "none")
+            saveres = [];
+            $(".table div").click(function (){
+                if ($(this).hasClass("active")) {
+                $(this).removeClass("active").addClass("nactive");
+                console.log($(this).attr("id"));    
+                saveres.push($(this).attr("id"));
+                }
+                return saveres;
+            });    
+            function generateArrayRandomNumber (min, max) {
+                var i, arr = [], res = [];
+                for (i = min; i <= max; i++ ) arr.push(i);
+                for (i = 0; i < max; i++) res.push(arr.splice(Math.floor(Math.random() * (arr.length)), 1)[0])
+                return res;
+            }    
+            var r = generateArrayRandomNumber(1,tab);    
+            var i = 1;
+                $('.table div#'+r[0]).addClass("active");    
+            var timerId = setInterval(function(){
+                if( i<= tab ) {
+                    if (!$('.table div').hasClass("active")) {
+                        clearInterval(timerId);
+                        $('.table div').remove();
+                        $('.table p').remove();
+                        $('input').val('');
+                        $('input').prop('disabled', false);
+                        $('.table').append('<p>YOU WIN</p>');
+                        $('.table').append('<span>Количество ходов: '+saveres.length+'</span>');
+                        $('button').css("display", "block")
+                    } else {
+                        $('.table div#'+r[i]).addClass("active");
+                        i++;
+                    }
+                }  
+                else {
+                    clearInterval(timerId);
+                    $('.table div').remove();
+                    $('.table p').remove();
+                    $('input').val('');
+                    $('input').prop('disabled', false);
+                    $('.table').append('<p>GAME OVER</p>');
+                    $('button').css("display", "block")
+                }
+            }, speed); 
+            } 
+            else {
+                $('.table p').remove();
+                $('.table').append('<p>Введите все параметры и сгенерируйте игру</p>');
+            }    
+            });
+            // end основная функция игры ----------------------------
+        });
+        
+    </script>    
+</head>
+<body>
+    <div class="param">
+    <h1>ИГРА "КТО БЫСТРЕЕ"</h1>
+    <p>ПАРАМЕТРЫ ИГРЫ:</p>
+    <p>Колонок <input type="text" id="width"></p>
+    <p>Строк <input type="text" id="height"></p>
+    <p>Скорость <input type="text" id="speed"></p>
+    <button class="gen">Сгенерировать</button>
+    <button class="startgame">START</button>
+    </div>
+    <div class="table"></div>
+</body>
+</html>
