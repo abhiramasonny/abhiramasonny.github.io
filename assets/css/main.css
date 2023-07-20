@@ -13,8 +13,9 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    color: #555;
-    font-family: 'Nunito Sans', sans-serif
+    color: #828282;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #000;
 }
 
 article,
@@ -34,6 +35,7 @@ section {
 h1 {
     margin: .67em 0;
     font-size: 2.5rem;
+    
 }
 
 figure {
@@ -4789,7 +4791,7 @@ strong {
     margin-top: 1em;
     padding-top: 1em;
     line-height: 1.25;
-    color: #333
+    color: #fbfbfb
 }
 
 h2 {
