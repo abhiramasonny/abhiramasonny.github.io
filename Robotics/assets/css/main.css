@@ -131,7 +131,7 @@ mg-3 {
 	position: relative;
 }
 .header-quote {
-	color: #2eb67d;
+	color: #b160bf;
 	font-weight: 700;
 	margin-bottom: 0;
 }
@@ -174,7 +174,7 @@ mg-3 {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-	color: #2eb67d;
+	color: #b754c9;
 	background-color: transparent;
 }
 .navbar .navbar-nav {
@@ -353,7 +353,7 @@ mg-3 {
 	left: 25px;
 	right: 25px;
 	padding: 15px;
-	background-color: #2eb67d;
+	background-color: #b160bf;
 	text-transform: uppercase;
 	color: #fff;
 	text-align: center;
@@ -907,11 +907,11 @@ mg-3 {
 	cursor: pointer;
 	display: none;
 	border-radius: 25px;
-	transition: all 500ms ease;
+	-o-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
 	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
 }
 
 .scroll-to-top:hover {
