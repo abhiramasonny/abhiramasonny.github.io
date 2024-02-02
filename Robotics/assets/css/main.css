@@ -75,7 +75,7 @@ mg-3 {
 }
 .btn-robot {
 	border-radius: 0;
-	background-color: #2eb67d;
+	background-color: #9955ff;
 	color: #fff;
 	text-transform: uppercase;
 	border-color: transparent;
@@ -87,8 +87,8 @@ mg-3 {
 }
 .btn-robot:hover {
 	background-color: transparent;
-	color: #2eb67d;
-	border-color: #2eb67d;
+	color: #9955ff;
+	border-color: #9955ff;
 }
 
 /*======================================================================
@@ -381,12 +381,13 @@ mg-3 {
 	letter-spacing: 2px;
 	margin-bottom: 30px;
 	position: relative;
+	color:#9955ff;
 }
 .incline-div {
 	position: absolute;
 	top: 3px;
 	left: 0;
-	border-top: 60px solid #2eb67d;
+	border-top: 60px solid #9955ff;
 	border-right: 60px solid transparent;
 	margin-left: -15px;
 	width: 350px;
@@ -398,6 +399,7 @@ mg-3 {
 }
 .stiker {
 	display: inline-block;
+	color: #9955ff;
 }
 .inner-stiker {
 	color: #fff;
@@ -436,7 +438,7 @@ mg-3 {
 	color: #fff;
 }
 .history .title {
-	color: #2eb67d;
+	color: #9955ff;
 }
 .history img {
 	padding: 60px 0 0;
@@ -482,7 +484,7 @@ mg-3 {
 	font-weight: 300;
 }
 .inner-header .breadcrumb > .active {
-	color: #2eb67d;
+	color: #9955ff;
 }
 .inner-header .breadcrumb a {
 	color: #fff;
@@ -574,7 +576,7 @@ mg-3 {
 	transition: all 0.4s ease-in-out;
 }
 .panel-default > .panel-heading:hover {
-	background-color: #2eb67d;
+	background-color: #9955ff;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
 	border-top: 2px solid rgba(0, 0, 0, 0.1);
@@ -603,7 +605,7 @@ mg-3 {
 	position: absolute;
 	left: -90%;
 	top: -90%;
-	background-color: #2eb67d;
+	background-color: #9955ff;
 	width: 100%;
 	height: 100%;
 	transition: all 0.4s ease-in-out;
@@ -639,7 +641,7 @@ mg-3 {
 }
 .star {
 	margin: 0;
-	color: #2eb67d;
+	color: #9955ff;
 }
 @media (min-width: 768px) {
 	.shop-price,
@@ -655,8 +657,8 @@ mg-3 {
 .pager li > a:focus,
 .pager li > a:hover {
 	color: #fff;
-	border-color: #2eb67d;
-	background-color: #2eb67d;
+	border-color: #9955ff;
+	background-color: #9955ff;
 }
 
 /*======================================================================
@@ -755,7 +757,7 @@ mg-3 {
 }
 .service-title .icon span {
 	font-size: 40px;
-	color: #2eb67d;
+	color: #9955ff;
 	margin-right: 15px;
 }
 .service-title div {
@@ -777,7 +779,7 @@ mg-3 {
 	letter-spacing: 2px;
 }
 .m-s-title {
-	color: #2eb67d;
+	color: #9955ff;
 	margin: 0;
 	padding-top: 100px;
 }
@@ -838,7 +840,7 @@ mg-3 {
 .social {
 	font-size: 24px;
 	float: right;
-	background-color: #2eb67d;
+	background-color: #9955ff;
 	padding: 5px;
 }
 .social a {
@@ -922,7 +924,7 @@ mg-3 {
 }
 
 .cta .btn-robot:hover {
-	color: #2eb67d;
+	color: #9955ff;
 }
 @media (max-width: 677px) {
 	.cta {
