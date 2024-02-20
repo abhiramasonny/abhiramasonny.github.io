@@ -107,3 +107,39 @@ document.addEventListener("DOMContentLoaded", function() {
         retina_detect: true
     });
 }, false);
+
+// JavaScript for additional animations
+document.addEventListener("DOMContentLoaded", function() {
+    const userProjects = document.querySelectorAll(".user-projects");
+  
+    userProjects.forEach(function(project) {
+      project.addEventListener("mouseenter", function() {
+        // Scale the project on hover
+        this.style.transform = "scale(1.05)";
+        
+        // Randomly rotate the project left or right
+        const rotationDirection = Math.random() < 0.5 ? "-" : ""; // Randomly choose left or right
+        const rotationAngle = Math.floor(Math.random() * 3) + 1; // Random angle between 1 and 10 degrees
+        this.style.transition = "transform 0.3s ease";
+        this.style.transform += `rotate(${rotationDirection}${rotationAngle}deg)`;
+        
+        // Change border color on hover
+        this.style.borderColor = "#ff6347"; // Tomato color
+        
+        // Add shadow effect
+        this.style.boxShadow = "0 10px 20px rgba(0, 0, 0, 0.2)";
+      });
+  
+      project.addEventListener("mouseleave", function() {
+        // Reset transformations on mouse leave
+        this.style.transform = "none";
+        
+        // Reset border color on mouse leave
+        this.style.borderColor = "#ccc";
+        
+        // Remove shadow effect
+        this.style.boxShadow = "none";
+      });
+    });
+  });
+  

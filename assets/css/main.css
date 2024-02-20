@@ -5065,7 +5065,63 @@ a img {
 .user-projects p {
     margin-right: 5px
 }
-
+/* Animated Box */
+.user-projects {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: borderAnimation 10s infinite alternate;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-color: #266bb9;
+    }
+    50% {
+      border-color: #0f0f8e;
+    }
+    100% {
+      border-color: #ccc;
+    }
+  }
+  
+  .user-projects:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-projects .contents {
+    margin-top: 20px;
+  }
+  
+  .user-projects .images-right,
+  .user-projects .images-left {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .user-projects .images-right img,
+  .user-projects .images-left img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .user-projects .images-right {
+    float: right;
+    margin-left: 20px;
+  }
+  
+  /* Clearfix */
+  .user-projects:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 @media only screen and (min-width:550px) {
     .contents {
         margin-left: 0;
