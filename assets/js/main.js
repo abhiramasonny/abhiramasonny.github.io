@@ -117,12 +117,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // Scale the project on hover
         this.style.transform = "scale(1.05)";
         
-        // Randomly rotate the project left or right
-        const rotationDirection = Math.random() < 0.5 ? "-" : ""; // Randomly choose left or right
-        const rotationAngle = Math.floor(Math.random() * 3) + 1; // Random angle between 1 and 10 degrees
-        this.style.transition = "transform 0.3s ease";
-        this.style.transform += `rotate(${rotationDirection}${rotationAngle}deg)`;
-        
         // Change border color on hover
         this.style.borderColor = "#ff6347"; // Tomato color
         
