@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhirama Sonny - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <button id="dark-mode-toggle"><i class="fas fa-sun"></i></button>
-    
     <nav id="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -18,16 +16,27 @@
         </ul>
     </nav>
 
-    <section id="home" class="landing">
+    <div id="home" class="section landing">
         <div id="particles-js"></div>
         <canvas id="shape-canvas"></canvas>
         <div class="landing-content">
             <h1>Abhirama Sonny</h1>
+            <div class="social-icons">
+                <a href="https://github.com/abhiramasonny" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
-    </section>
+    </div>
 
     <div class="content">
-        <section id="about-skills">
+        <div id="about-skills" class="section">
             <div class="about-skills-container">
                 <div class="about-container">
                     <h2>About Me</h2>
@@ -36,52 +45,44 @@
                             <img src="img/Me.png" alt="Abhirama Sonny">
                         </div>
                         <div class="about-text">
-                            <p>Hi! I'm Abhirama Sonny, a student at Allen High School. I have experience programming with machine learning, and data science, along with front and back-end web development. I am seeking research opportunities or internships in machine learning and software engineering.</p>
+                            Hi! I'm Abhirama Sonny, a student at Allen High School. I have
+                            experience programming with machine learning, and data science, along
+                            with front and back-end web development. I am seeking research
+                            opportunities or internships in machine learning and software
+                            engineering.
                         </div>
                     </div>
                 </div>
                 <div class="skills-container">
                     <div class="skill">
-                        <div class="skill-name">
-                            <span>Python</span>
-                            <span class="skill-percentage">90%</span>
-                        </div>
+                        <div class="skill-name">Python <span class="skill-percentage">90%</span></div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 90%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            <span>Java</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
+                        <div class="skill-name">Java <span class="skill-percentage">80%</span></div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            <span>C</span>
-                            <span class="skill-percentage">80%</span>
-                        </div>
+                        <div class="skill-name">C <span class="skill-percentage">80%</span></div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            <span>JS</span>
-                            <span class="skill-percentage">60%</span>
-                        </div>
+                        <div class="skill-name">JS <span class="skill-percentage">60%</span></div>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 60%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="projects">
+        <div id="projects" class="section">
             <h2>Projects</h2>
             <div class="projects">
                 <div class="project">
@@ -90,8 +91,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Jaithon</h3>
-                        <p class="project-description">A simplified programming language based on Python for educating elementary school students.</p>
-                        <p class="project-tech">Technologies: C, Memory Management</p>
+                        <p>A simplified programming language based on Python for educating elementary school students.</p>
+                        <p>Technologies: C, Memory Management</p>
                         <a href="https://github.com/abhiramasonny/jaithon" class="project-link">Learn More</a>
                     </div>
                 </div>
@@ -101,8 +102,8 @@
                     </div>
                     <div class="project-content">
                         <h3>HealthBuddy</h3>
-                        <p class="project-description">A wearable necklace with sensors to monitor vital signs, with AI software for data analysis and alerts. Won 2nd Place.</p>
-                        <p class="project-tech">Technologies: IoT, AI, Data Analysis</p>
+                        <p>A wearable necklace with sensors to monitor vital signs, with AI software for data analysis and alerts. Won 2nd Place.</p>
+                        <p>Technologies: IoT, AI, Data Analysis</p>
                         <a href="https://www.untdallas.edu/news/wipro_science_soiree.php" class="project-link">Learn More</a>
                     </div>
                 </div>
@@ -112,8 +113,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Heart Data Predictions</h3>
-                        <p class="project-description">Deep-learning algorithms to predict heart failure based on various health parameters.</p>
-                        <p class="project-tech">Technologies: Machine Learning, Data Science</p>
+                        <p>Deep-learning algorithms to predict heart failure based on various health parameters.</p>
+                        <p>Technologies: Machine Learning, Data Science</p>
                         <a href="https://github.com/abhiramasonny/HeartDataPredictions" class="project-link">Learn More</a>
                     </div>
                 </div>
@@ -123,16 +124,17 @@
                     </div>
                     <div class="project-content">
                         <h3>Gun Detection with ML</h3>
-                        <p class="project-description">A CNN algorithm to identify firearms in video streams with a Rapid Response System.</p>
-                        <p class="project-tech">Technologies: Computer Vision, Machine Learning</p>
+                        <p>A CNN algorithm to identify firearms in video streams with a Rapid Response System.</p>
+                        <p>Technologies: Computer Vision, Machine Learning</p>
                         <a href="https://github.com/ISEF-ScienceFair-Projects/GunDetection" class="project-link">Learn More</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <div id="scroll-top">↑</div>
+    <button id="dark-mode-toggle"><i class="fas fa-sun"></i></button>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
