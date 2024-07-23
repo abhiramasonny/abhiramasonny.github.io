@@ -175,3 +175,111 @@ window.addEventListener('scroll', function() {
         navbar.style.background = 'rgba(44, 62, 80, 0.8)';
     }
 });
+const timelineData = [
+    {
+      year: '2023-2024',
+      organization: 'ASPIRE',
+      title: 'Co-founder & Co-president',
+      description: 'Organized a summer camp for 30+ middle school students generating 1600+ USD for school robotisc club.'
+    },
+    {
+      year: '2024-2025',
+      organization: 'EmpowerIndiaEdu',
+      title: 'Social Media Marketing & Outreach Intern',
+      description: 'Designed social media content for donation campaigns.'
+    },
+    {
+      year: '2024-2025',
+      organization: 'Inclusive Computing Initiative',
+      title: 'Co-Head of AI Development',
+      description: 'Developed a deep learning algorithm for question difficulty adjustment.'
+    },
+    {
+      year: '2023-2024',
+      organization: 'FTC Robotics',
+      title: 'Programming Lead',
+      description: 'Lead the programming team: won control award at regional competition.'
+    },
+    {
+      year: '2023-2024',
+      organization: 'VEX IQ Robotics',
+      title: 'Head Coach',
+      description: 'Coached students in VEX IQ robotics: advanced to the world championships.'
+    },
+    {
+      year: '2023-2024',
+      organization: 'UIL Team',
+      title: 'Regional Level Competitor',
+      description: 'Competed in Computer Applications at district level (2nd place) and advanced to reigonals.'
+    }
+  ];
+  
+  function compareYears(a, b) {
+    // Split the year range and take the last year for comparison
+    const yearA = a.year.split('-').pop();
+    const yearB = b.year.split('-').pop();
+    
+    // Compare years in descending order (most recent first)
+    return yearB - yearA;
+  }
+  
+  function createTimelineItems() {
+    const timeline = document.querySelector('.timeline');
+    
+    // Sort the timelineData array
+    const sortedData = timelineData.sort(compareYears);
+    
+    sortedData.forEach((data, index) => {
+      const item = document.createElement('div');
+      item.className = 'timeline-item';
+      item.innerHTML = `
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">${data.year}</div>
+          <div class="timeline-org">${data.organization}</div>
+          <div class="timeline-title">${data.title}</div>
+          <div class="timeline-description">${data.description}</div>
+          <div class="timeline-details">
+            <p>${data.details}</p>
+          </div>
+        </div>
+      `;
+      timeline.appendChild(item);
+    });
+  
+    // Add event listeners to the "More Details" buttons
+    document.querySelectorAll('.details-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const details = this.nextElementSibling;
+        if (details.style.display === 'none') {
+          details.style.display = 'block';
+          this.textContent = 'Less Details';
+        } else {
+          details.style.display = 'none';
+          this.textContent = 'More Details';
+        }
+      });
+    });
+  }
+  
+  // Call this function when the DOM is loaded
+  document.addEventListener('DOMContentLoaded', createTimelineItems);
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var name = document.getElementById('name').value;
+    var message = document.getElementById('message').value;
+    
+    var mailtoLink = 'mailto:abhirama.sonny@gmail.com'
+      + '?subject=' + encodeURIComponent('Contact from ' + name)
+      + '&body=' + encodeURIComponent('Name: ' + name + '\n\nMessage:\n' + message);
+    
+    window.location.href = mailtoLink;
+    
+    // Optional: Clear the form after submission
+    this.reset();
+    
+    // Optional: Show a confirmation message
+    alert('Thank you for your message! I will get back to you soon.');
+  });
