@@ -172,18 +172,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-const body = document.body;
-
-darkModeToggle.addEventListener("click", function () {
-  body.classList.toggle("dark-mode");
-  if (body.classList.contains("dark-mode")) {
-    this.innerHTML = '<i class="fas fa-moon"></i>';
-  } else {
-    this.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-});
-
 window.addEventListener("scroll", function () {
   var navbar = document.getElementById("navbar");
   if (window.pageYOffset > 50) {
@@ -198,7 +186,7 @@ const timelineData = [
     organization: "ASPIRE",
     title: "Co-founder & Co-president",
     description:
-      "Organized a summer camp for 30+ middle school students generating 1600+ USD for school robotisc club.",
+      "Organized a summer camp for 30+ middle school students generating 1600+ USD for school robotics club.",
   },
   {
     year: "2024-2025",
@@ -232,7 +220,7 @@ const timelineData = [
     organization: "UIL Team",
     title: "Regional Level Competitor",
     description:
-      "Competed in Computer Applications at district level (2nd place) and advanced to reigonals.",
+      "Competed in Computer Applications at district level (2nd place) and advanced to regionals.",
   },
 ];
 
