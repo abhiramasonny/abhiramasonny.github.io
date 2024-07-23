@@ -272,6 +272,195 @@ nav ul li a:hover::after {
   background-color: var(--secondary-color);
 }
 
+#experience {
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.timeline-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 40px 0 20px;
+  position: relative;
+}
+
+.timeline-scroll {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  position: relative;
+  white-space: nowrap;
+  padding: 30px 0 0;
+  width: max-content; /* This makes it only as wide as its content */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; /* Changed from -9999px to 0 */
+  height: 2px;
+  background: var(--primary-color);
+  z-index: 1;
+}
+
+.timeline-item {
+  display: inline-block;
+  width: 300px;
+  margin-right: 40px;
+  vertical-align: top;
+  position: relative;
+  padding-top: 20px;
+}
+
+.timeline-item:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.timeline-dot {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Rest of your timeline styles... */
+.timeline-content {
+  background: var(--bg-color);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.timeline-year {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.timeline-org {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 3px;
+}
+
+.timeline-title {
+  font-size: 1em;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.timeline-description {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: var(--text-color);
+  white-space: normal;
+}
+
+.timeline-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 0;
+  background-color: var(--bg-color);
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+#contact-form {
+  flex: 1;
+  margin-right: 40px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+#contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--secondary-color);
+}
+
 /* Utility Classes */
 #scroll-top {
   position: fixed;
@@ -363,14 +552,6 @@ nav ul li a:hover::after {
   animation-delay: 0.4s;
 }
 
-/* Dark Mode */
-.dark-mode {
-  --bg-color: #fff;
-  --text-color: #333;
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .landing h1 {
@@ -401,168 +582,9 @@ nav ul li a:hover::after {
   .skill {
     width: 100%;
   }
-}
-#experience {
-    padding: 40px 0;
-  }
-  
-  .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 0 20px 40px;
-  }
-  
-  .timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: var(--primary-color);
-  }
-  
-  .timeline-item {
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 30px;
-  }
-  
-  .timeline-dot {
-    position: absolute;
-    top: 0;
-    left: -6px;
-    width: 12px;
-    height: 12px;
-    background: var(--primary-color);
-    border-radius: 50%;
-  }
-  
-  .timeline-content {
-    background: var(--bg-color);
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  
-  .timeline-year {
-    font-size: 0.9em;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-  }
-  
-  .timeline-org {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: var(--secondary-color);
-    margin-bottom: 3px;
-  }
-  
-  .timeline-title {
-    font-size: 1em;
-    color: var(--text-color);
-    margin-bottom: 8px;
-  }
-  
-  .timeline-description {
-    font-size: 0.9em;
-    line-height: 1.4;
-    color: var(--text-color);
-  }
-  
-  @media screen and (max-width: 600px) {
-    .timeline {
-      padding-left: 20px;
-    }
-    
-    .timeline-item {
-      padding-left: 20px;
-    }
-  }
-#contact {
-  padding: 60px 0;
-  background-color: var(--bg-color);
-}
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-#contact-form {
-  flex: 1;
-  margin-right: 40px;
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 5px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}
-
-#contact-form textarea {
-  height: 150px;
-  resize: vertical;
-}
-
-.submit-btn {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: var(--secondary-color);
-}
-
-.contact-info {
-  flex: 1;
-}
-
-.contact-info h3 {
-  margin-bottom: 20px;
-  color: var(--primary-color);
-}
-
-.contact-info p {
-  margin-bottom: 10px;
-}
-
-.social-links {
-  margin-top: 20px;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--secondary-color);
-}
-
-@media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
   }
-
   #contact-form {
     margin-right: 0;
     margin-bottom: 40px;
