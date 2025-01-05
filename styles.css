@@ -132,82 +132,38 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* About and Skills Section */
-#about-skills {
-  padding: 40px 0;
+#about {
+  padding: 60px 0;
 }
 
-.about-skills-container {
+.about-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
+  gap: 40px; /* Space between the image and text */
+  align-items: center; /* Align items vertically at the center */
 }
 
-.about-container,
-.skills-container {
-  flex: 1;
+.profile-image-large {
+  flex: 1; /* Allows the image to take up one part of the available space */
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-image {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.profile-image img {
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.profile-image-large img {
+  width: 500px; /* Adjust size as needed */
+  border-radius: 15px; /* Optional: Makes corners rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-text {
-  text-align: center;
+  flex: 2; /* Allows the text to take up two parts of the available space */
+  text-align: left;
 }
 
-.skills-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.skill {
+.about-text h2 {
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 
-.skill-name {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.skill-percentage {
-  color: var(--primary-color);
-}
-
-.skill-bar {
-  height: 10px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.skill-level {
-  height: 100%;
-  background-color: var(--primary-color);
-  width: 0;
-  transition: width 1s ease-in-out;
+.about-text p {
+  line-height: 1.8;
 }
 
 /* Projects Section */
@@ -554,20 +510,6 @@ nav ul li a:hover::after {
   nav ul li {
     margin: 5px 0;
   }
-  .about-skills-container {
-    flex-direction: column;
-  }
-  .about-container,
-  .skills-container {
-    width: 100%;
-  }
-  .profile-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .skill {
-    width: 100%;
-  }
   .contact-container {
     flex-direction: column;
   }
@@ -576,3 +518,45 @@ nav ul li a:hover::after {
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: 850px) {
+  .about-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-image-large img {
+      margin-bottom: 20px;
+      width: 80vw; /* Adjust size for smaller screens */
+  }
+}
+
+
+/* Work Experience Section */
+#experience {
+  padding: 60px 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.experience-item {
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  line-height: 1.6;
+}
+
+/* General Utility */
