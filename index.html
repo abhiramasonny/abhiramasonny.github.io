@@ -1,165 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abhirama Sonny</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H1DQSV2KDL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
 
-  gtag('config', 'G-H1DQSV2KDL');
-</script>
-</head>
-<body>
+  <body>
     <nav id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Work Experience</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     </nav>
 
-    <div id="home" class="section landing">
-        <div id="particles-js"></div>
-        <div class="landing-content">
-            <h1>Abhirama Sonny</h1>
-            <div class="social-icons">
-                <a href="https://github.com/abhiramasonny" target="_blank" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/abhiramasonny" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/abhiramas9/" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=YmTQqPIAAAAJ&hl=en" target="_blank" class="social-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="mailto:abhirama.sonny@gmail.com" class="social-icon">
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </div>
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="img/Me.jpg" alt="" />
 
-    <div class="content">
-      <div id="about" class="section">
-        <div class="about-container">
-            <div class="profile-image-large">
-                <img src="img/Me.jpg" alt="Abhirama Sonny">
-            </div>
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hi! I'm Abhirama Sonny, a student at Allen High School. I intend to major in statistics and data science with a minor in mathematics. I have experience programming with Python in machine learning and front and back-end web development. I am also interested in Biology and seek research opportunities or internships in machine learning or Biotechnology.</p>
-            </div>
-        </div>
-    </div>
-    
+        <div class="info-box">
+          <div class="text">
+            <h3>Hello, I'm</h3>
+            <h1 class="typewriter">Abhirama Sonny</h1>
+            <span>Student</span>
+          </div>
 
-        <div id="projects" class="section">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://github.com/abhiramasonny/abhiramasonny.github.io/blob/main/img/Jaithon.jpg?raw=true" alt="Jaithon Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>Jaithon</h3>
-                        <p>A simplified programming language based on Python for educating elementary school students.</p>
-                        <p>Technologies: C, Memory Management</p>
-                        <a href="https://github.com/abhiramasonny/jaithon" class="project-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://storage.scolary.com/storage/file/public/d5d261cf-32b1-4389-90f3-f7a4a44814da.svg" alt="Cantú Syndrome Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>A Novel Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome</h3>
-                        <p>A theoretical ML approach for Cantú syndrome detection with computational biology.</p>
-                        <p>Technologies: Machine Learning, Computational Biology</p>
-                        <a href="https://osf.io/preprints/osf/bswd5" class="project-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Neural_network.svg/1200px-Neural_network.svg.png" alt="Neural Network">
-                    </div>
-                    <div class="project-content">
-                        <h3>Neural Network implementation in Java</h3>
-                        <p>Created a Neural Network implementation in Java from scratch, achieving 99% accuracy on MNIST Dataset.</p>
-                        <p>Technologies: Java</p>
-                        <a href="https://github.com/abhiramasonny/JavaNeuralNetworkFromScratch" class="project-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image" style="text-align: center;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Diagram_of_the_human_heart.svg/1174px-Diagram_of_the_human_heart.svg.png" alt="Heart Data Predictions" style="width: 50%; margin: 0 auto;">
-                    </div>
-                    <div class="project-content">
-                        <h3>Heart Data Predictions</h3>
-                        <p>Deep-learning algorithms to predict heart failure based on health parameters.</p>
-                        <p>Technologies: Machine Learning, Data Science</p>
-                        <a href="https://github.com/abhiramasonny/HeartDataPredictions" class="project-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="img/isef.png" alt="Gun Detection">
-                    </div>
-                    <div class="project-content">
-                        <h3>Gun Detection</h3>
-                        <p>Developed a CNN algorithm to identify firearms in video streams with a rapid response system.</p>
-                        <p>Technologies: Computer Vision, Machine Learning</p>
-                        <a href="https://github.com/ISEF-ScienceFair-Projects/GunDetection" class="project-link">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://vipravrinda.org/imgs/logo/Logo%20Vector-01.png" alt="VipraVrinda">
-                    </div>
-                    <div class="project-content">
-                        <h3>VipraVrinda</h3>
-                        <p>A non-profit organization uniting the Trimathasta Kannada Brahmin community in North America to preserve heritage and foster cultural connections.</p>
-                        <p>Technologies: Community Building</p>
-                        <a href="https://vipravrinda.org/" class="project-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
+          <div class="btn-group">
+            <a href="Resume.pdf" download class="btn">Download Resume</a>
+            <a href="#contact" class="btn">Contact</a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/abhiramasonny" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhiramasonny/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-me-container">
+        <div class="about-me-text">
+          <p>
+            Hi! I'm Abhirama Sonny, a student at Allen High School. I intend to
+            major in Computer Science and Molecular Biology, and I have
+            experience programming with Python in machine learning and front and
+            back-end web development. I am also interested in Biology and seek
+            research opportunities or internships in machine learning in these
+            fields.
+          </p>
+
+          <p>
+            I am currently preparing for the USACO, USABO, and USAPHO Olympiads.
+            In my free time I enjoy biking outside, going on long drives, and
+            playing chess.
+          </p>
+
+          <p>
+            I also serve as a Board Member for
+            <a href="https://www.inclusivecompute.org/"
+              >ICI - Inclusive Computing Initiative</a
+            >
+            where I help teach students with special needs computer science,
+            biology and other STEM topics. Also, I am a website developer for
+            <a href="https://vipravrinda.org">VipraVrinda</a> which is an
+            organization dedicated to preserving the Kannada Brahmin community.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="experience-info">
+        <div class="grid">
+          <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Board Member - Inclusive Computing Initiative</span>
+            <h3>Nov '23' - Present</h3>
+            <p>
+              ICI is a 501(c)(3) Non-profit organization centered around
+              teaching Computer Science to children with special needs. <br />
+              <br />
+
+              - Spearheaded the growth of the organization, increasing student
+              participation by 40% in underserved communities.<br />
+              - Designed and implemented a dynamic difficulty adjustment
+              algorithm, resulting in a 30% improvement in student retention and
+              engagement.<br />
+              - Designed organization website; resulted in increased marketing
+              outreach
+            </p>
+          </div>
+
+          <!--<div class="grid-card">
+            <i class="fa-solid fa-file-code"></i>
+            <span>FTC Robotics ​7172 Technical Difficulties - Programmer</span>
+            <h3>Aug '24 - Present</h3>
+            <p>
+
+            </p>
+          </div>-->
+
+          <div class="grid-card">
+            <i class="fa-solid fa-laptop"></i>
+            <span>UI/UX Designer - VipraVrinda</span>
+            <h3>Nov '24 - Present</h3>
+            <p>
+              Vipravrinda is a non-profit organization that unites the Kannada
+              Brahmin community in North America to preserve culture, foster
+              connections, and support future generations. <br /><br />
+              - Designed and developed a responsive website, resulting in a
+              streamlined onboarding process for 200+ members in Dallas Texas.
+              <br />
+              - Collaborated with leadership to align technological solutions
+              with organizational goals, supporting long-term cultural
+              preservation initiatives.
+            </p>
+          </div>
+
+          <div class="grid-card">
+            <i class="fa-solid fa-list"></i>
+            <span>Social Media Marketing - EmpowerIndia Edu</span>
+            <h3>June '24 - July '24</h3>
+            <p>
+              - Designed social media content to promote donation campaigns,
+              boosting audience engagement and contributions. <br />
+              - Implemented social media marketing strategies and optimized
+              content to increase engagement and outreach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20230602113310/Neural-Networks-Architecture.png"
+            alt="Project X"
+          />
+          <h3>Java Neural Network</h3>
+          <p>
+            I designed and implemented a neural network from scratch in Java,
+            utilizing linear algebra, multithreading, and object-oriented
+            programming for efficient computation and scalability. I used this
+            neural network to train networks on the MNIST dataset and the
+            CIFAR-10 dataset and achieved 95+ accuracies.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/abhiramasonny/JavaNeuralNetworkFromScratch"
+              target="_blank"
+              class="btn"
+              >Github Repo</a
+            >
+          </div>
         </div>
 
-        <!--<div id="experience" class="section">
-            <h2>Work Experience</h2>
-            <div class="experience-list">
-                <div class="experience-item">
-                    <h3>FTC Robotics</h3>
-                    <p>Programming 7172 Technical Difficulties - 8th/16000 Teams, 99.95% percentile</p>
-                </div>
-                <div class="experience-item">
-                    <h3>ASPIRE</h3>
-                    <p>Co-founder & Co-president - Organized a summer camp for 30+ middle school students generating 1600+ USD for school robotics club.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>EmpowerIndiaEdu</h3>
-                    <p>Social Media Marketing & Outreach Intern - Designed social media content for donation campaigns.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Inclusive Computing Initiative</h3>
-                    <p>Artificial Intelligence Engineer - Developed a deep learning algorithm for question difficulty adjustment.</p>
-                </div>
-            </div>
+        <div class="project-card dark">
+          <img src="img/Screenshot 2025-01-23 at 2.51.53 PM.png" alt="Project Y" />
+          <h3>
+            Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome
+          </h3>
+          <p>
+            I designed a few-shot learning framework for diagnosing ultra-rare
+            diseases. I used an attention mechanism paried with 2 layrs of
+            training to make up for a low sample size.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://osf.io/preprints/osf/bswd5"
+              target="_blank"
+              class="btn"
+              >Preprint Link</a
+            >
+          </div>
         </div>
-    </div>-->
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-</body>
+        <div class="project-card">
+          <img src="img/Screenshot 2025-01-23 at 2.53.13 PM.png" alt="Project Z" />
+          <h3>Jaithon</h3>
+          <p>
+            I developed a simplified programming language based on Python for
+            educating elementary school students. I used C to build Jaithon,
+            along with techniques such as bootstrapping, garbage collection, a
+            parser and lexer system and many more.
+          </p>
+          <div class="btn-group">
+            <a
+              href="https://github.com/abhiramasonny/Jaithon"
+              target="_blank"
+              class="btn"
+              >Github Repo</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-description">Feel free to reach out to me!</p>
+
+      <div class="contact-icons">
+        <a href="mailto:abhirama.sonny@gmail.com" class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Send an Email</span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abhiramasonny/"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>Connect on LinkedIn</span>
+        </a>
+        <a
+          href="https://github.com/abhiramasonny"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="fa-brands fa-github"></i>
+          <span>Follow on GitHub</span>
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=YmTQqPIAAAAJ&hl=en"
+          target="_blank"
+          class="contact-icon"
+        >
+          <i class="fas fa-graduation-cap"></i>
+          <span>My Research Profile</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#about-me">About</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <p class="copyright">© All Rights Reserved | Abhirama Sonny</p>
+
+      <script src="script.js"></script>
+    </footer>
+  </body>
 </html>
