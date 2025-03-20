@@ -158,7 +158,7 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
         <div class="about-highlight">
           <h3 class="highlight-title">My Areas of Interest</h3>
           <p class="highlight-text">
-            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science
+            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science, Quantitative trading, Cybersecurity 
           </p>
         </div>
       </div>
@@ -288,6 +288,15 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
             and Engineering Fair for my project: Deep Learning Classification and Analysis
             of Standard Heart Views in Ultrasound Imaging for Enhanced Cardiac Diagnosis.
           </p>
+        </div>
+        
+        <div class="honor-card">
+          <h3 class="honor-title">UNT/Wipro Conference 2nd Place</h3>
+          <span class="honor-date">Aug '23</span>
+          <p class="honor-description">
+            2nd Place at the Great Scientist Soiree for my work on HealthBuddy: a sensor based device, paired with ML algorithms to detect arrhythmia through a pendant on a necklace.
+          </p>
+          <a href="https://www.untdallas.edu/news/wipro_science_soiree.php#:~:text=The%20ninth%2Dgrade,used%20in%20watches." target="_blank">Article Link</a> 
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))n(i);new MutationObserver(i=>{for(const a of i)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function t(i){const a={};return i.integrity&&(a.integrity=i.integrity),i.referrerPolicy&&(a.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?a.credentials="include":i.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function n(i){if(i.ep)return;i.ep=!0;const a=t(i);fetch(i.href,a)}})();function r(){const s=document.getElementById("theme-toggle"),e=window.matchMedia("(prefers-color-scheme: dark)"),t=localStorage.getItem("theme")||(e.matches?"dark":"light");if(document.documentElement.setAttribute("data-theme",t),s){const n=s.querySelector("i");n&&(n.className=t==="dark"?"fa-solid fa-sun":"fa-solid fa-moon")}s==null||s.addEventListener("click",()=>{const i=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",i),localStorage.setItem("theme",i);const a=s.querySelector("i");a&&(a.className=i==="dark"?"fa-solid fa-sun":"fa-solid fa-moon")})}function l(){const s=document.querySelector("#navbar ul"),e=document.createElement("button");e.id="menu-toggle",e.innerHTML='<i class="fa-solid fa-bars"></i>',e.setAttribute("aria-label","Toggle navigation menu");const t=()=>{var i;if(window.innerWidth<=768)document.getElementById("menu-toggle")||(i=document.getElementById("navbar"))==null||i.insertBefore(e,document.getElementById("theme-toggle"));else{const a=document.getElementById("menu-toggle");a&&a.remove(),s==null||s.classList.remove("active")}};t(),window.addEventListener("resize",t),e.addEventListener("click",()=>{s==null||s.classList.toggle("active");const i=e.querySelector("i");i&&(s!=null&&s.classList.contains("active")?i.className="fa-solid fa-xmark":i.className="fa-solid fa-bars")}),document.querySelectorAll("#navbar ul li a").forEach(i=>{i.addEventListener("click",()=>{if(window.innerWidth<=768){s==null||s.classList.remove("active");const a=e.querySelector("i");a&&(a.className="fa-solid fa-bars")}})})}document.addEventListener("DOMContentLoaded",()=>{r(),l()});document.querySelector("#root").innerHTML=`
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))n(i);new MutationObserver(i=>{for(const s of i)if(s.type==="childList")for(const o of s.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&n(o)}).observe(document,{childList:!0,subtree:!0});function t(i){const s={};return i.integrity&&(s.integrity=i.integrity),i.referrerPolicy&&(s.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?s.credentials="include":i.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function n(i){if(i.ep)return;i.ep=!0;const s=t(i);fetch(i.href,s)}})();function r(){const a=document.getElementById("theme-toggle"),e=window.matchMedia("(prefers-color-scheme: dark)"),t=localStorage.getItem("theme")||(e.matches?"dark":"light");if(document.documentElement.setAttribute("data-theme",t),a){const n=a.querySelector("i");n&&(n.className=t==="dark"?"fa-solid fa-sun":"fa-solid fa-moon")}a==null||a.addEventListener("click",()=>{const i=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",i),localStorage.setItem("theme",i);const s=a.querySelector("i");s&&(s.className=i==="dark"?"fa-solid fa-sun":"fa-solid fa-moon")})}function l(){const a=document.querySelector("#navbar ul"),e=document.createElement("button");e.id="menu-toggle",e.innerHTML='<i class="fa-solid fa-bars"></i>',e.setAttribute("aria-label","Toggle navigation menu");const t=()=>{var i;if(window.innerWidth<=768)document.getElementById("menu-toggle")||(i=document.getElementById("navbar"))==null||i.insertBefore(e,document.getElementById("theme-toggle"));else{const s=document.getElementById("menu-toggle");s&&s.remove(),a==null||a.classList.remove("active")}};t(),window.addEventListener("resize",t),e.addEventListener("click",()=>{a==null||a.classList.toggle("active");const i=e.querySelector("i");i&&(a!=null&&a.classList.contains("active")?i.className="fa-solid fa-xmark":i.className="fa-solid fa-bars")}),document.querySelectorAll("#navbar ul li a").forEach(i=>{i.addEventListener("click",()=>{if(window.innerWidth<=768){a==null||a.classList.remove("active");const s=e.querySelector("i");s&&(s.className="fa-solid fa-bars")}})})}document.addEventListener("DOMContentLoaded",()=>{r(),l()});document.querySelector("#root").innerHTML=`
   <nav id="navbar">
     <ul>
       <li><a href="#hero">Home</a></li>
@@ -71,7 +71,7 @@
         <div class="about-highlight">
           <h3 class="highlight-title">My Areas of Interest</h3>
           <p class="highlight-text">
-            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science
+            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science, Quantitative trading, Cybersecurity 
           </p>
         </div>
       </div>
@@ -158,7 +158,7 @@
               Designed lesson plans for all four contest areas
             </p>
             <p class="activity-item">
-              Gave lectures to over 150 middle school students weekly
+              Gave lectures to over 150 middle school students
             </p>
           </div>
         </div>
@@ -201,6 +201,15 @@
             and Engineering Fair for my project: Deep Learning Classification and Analysis
             of Standard Heart Views in Ultrasound Imaging for Enhanced Cardiac Diagnosis.
           </p>
+        </div>
+        
+        <div class="honor-card">
+          <h3 class="honor-title">UNT/Wipro Conference 2nd Place</h3>
+          <span class="honor-date">Aug '23</span>
+          <p class="honor-description">
+            2nd Place at the Great Scientist Soiree for my work on HealthBuddy: a sensor based device, paired with ML algorithms to detect arrhythmia through a pendant on a necklace.
+          </p>
+          <a href="https://www.untdallas.edu/news/wipro_science_soiree.php#:~:text=The%20ninth%2Dgrade,used%20in%20watches." target="_blank">Article Link</a> 
         </div>
       </div>
     </div>
@@ -332,7 +341,7 @@ A Novel Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome</h
         transform: scaleX(0);
         transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
       }
-    `,document.head.appendChild(e)}}class h{constructor(e,t=.05){this.elements=document.querySelectorAll(e),this.factor=t,this.init()}init(){window.addEventListener("scroll",this.handleScroll.bind(this)),this.handleScroll()}handleScroll(){const e=window.scrollY;this.elements.forEach(t=>{const n=t.dataset.speed||this.factor,i=e*n;t.style.transform=`translate3d(0, ${i}px, 0)`})}}class m{constructor(){this.init()}init(){this.spotlight=document.createElement("div"),this.spotlight.classList.add("cursor-spotlight"),document.body.appendChild(this.spotlight),this.addCSS(),document.addEventListener("mousemove",this.handleMouseMove.bind(this)),document.addEventListener("scroll",this.handleMouseMove.bind(this))}handleMouseMove(e){const t=e.clientX,n=e.clientY;this.spotlight.style.background=`radial-gradient(
+    `,document.head.appendChild(e)}}class h{constructor(e,t=.05){this.elements=document.querySelectorAll(e),this.factor=t,this.init()}init(){window.addEventListener("scroll",this.handleScroll.bind(this)),this.handleScroll()}handleScroll(){const e=window.scrollY;this.elements.forEach(t=>{const n=t.dataset.speed||this.factor,i=e*n;t.style.transform=`translate3d(0, ${i}px, 0)`})}}class p{constructor(){this.init()}init(){this.spotlight=document.createElement("div"),this.spotlight.classList.add("cursor-spotlight"),document.body.appendChild(this.spotlight),this.addCSS(),document.addEventListener("mousemove",this.handleMouseMove.bind(this)),document.addEventListener("scroll",this.handleMouseMove.bind(this))}handleMouseMove(e){const t=e.clientX,n=e.clientY;this.spotlight.style.background=`radial-gradient(
       circle at ${t}px ${n}px,
       rgba(255, 255, 255, 0.02) 0%,
       rgba(255, 255, 255, 0) 15%
@@ -354,7 +363,7 @@ A Novel Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome</h
           rgba(0, 0, 0, 0) 15%
         );
       }
-    `,document.head.appendChild(e)}}class p{constructor(e){this.container=document.querySelector(e),this.container&&(this.images=this.container.querySelectorAll("img"),!(this.images.length<2)&&this.init())}init(){this.minOffset=0,this.maxOffset=-((this.images.length-1)*this.images[0].offsetWidth),this.container.addEventListener("mousemove",this.handleMouseMove.bind(this)),this.addCSS()}handleMouseMove(e){const t=this.container.getBoundingClientRect(),i=(e.clientX-t.left)/t.width,a=this.maxOffset*i*.2;this.images.forEach((o,c)=>{o.style.transform=`translateX(${a*(c/(this.images.length-1))}px)`})}addCSS(){const e=document.createElement("style");e.textContent=`
+    `,document.head.appendChild(e)}}class m{constructor(e){this.container=document.querySelector(e),this.container&&(this.images=this.container.querySelectorAll("img"),!(this.images.length<2)&&this.init())}init(){this.minOffset=0,this.maxOffset=-((this.images.length-1)*this.images[0].offsetWidth),this.container.addEventListener("mousemove",this.handleMouseMove.bind(this)),this.addCSS()}handleMouseMove(e){const t=this.container.getBoundingClientRect(),i=(e.clientX-t.left)/t.width,s=this.maxOffset*i*.2;this.images.forEach((o,c)=>{o.style.transform=`translateX(${s*(c/(this.images.length-1))}px)`})}addCSS(){const e=document.createElement("style");e.textContent=`
       ${this.container.className} {
         position: relative;
         overflow: hidden;
@@ -363,7 +372,7 @@ A Novel Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome</h
       ${this.container.className} img {
         transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
       }
-    `,document.head.appendChild(e)}}class u{constructor(e='a[href^="#"]'){this.links=document.querySelectorAll(e),this.init()}init(){this.links.forEach(e=>{e.addEventListener("click",this.handleClick.bind(this))})}handleClick(e){const n=e.currentTarget.getAttribute("href");if(n==="#")return;const i=document.querySelector(n);if(!i)return;e.preventDefault();const a=document.querySelector("#navbar"),o=a?a.offsetHeight:0,c=i.getBoundingClientRect().top+window.scrollY;window.scrollTo({top:c-o-20,behavior:"smooth"})}}class g{constructor(e){this.buttons=document.querySelectorAll(e),this.init()}init(){this.buttons.forEach(e=>{e.style.transition="all 0.2s cubic-bezier(0.22, 1, 0.36, 1)",e.addEventListener("mousedown",this.handleMouseDown.bind(this)),e.addEventListener("mouseup",this.handleMouseUp.bind(this)),e.addEventListener("mouseleave",this.handleMouseUp.bind(this))})}handleMouseDown(e){const t=e.currentTarget;t.style.transform="scale(0.98)",t.style.opacity="0.95"}handleMouseUp(e){const t=e.currentTarget;t.style.transform="scale(1)",t.style.opacity="1"}}class v{constructor(){this.init()}init(){document.querySelectorAll("img").forEach(t=>{t.complete?t.classList.add("loaded"):t.addEventListener("load",()=>{t.classList.add("loaded")})}),setTimeout(()=>{const t=document.querySelector(".hero");t&&t.classList.add("loaded")},300)}}class f{constructor(){this.sections=document.querySelectorAll("section:not(.hero)"),this.init()}init(){const e={threshold:.15,rootMargin:"0px 0px -10% 0px"},t=new IntersectionObserver(n=>{n.forEach(i=>{i.isIntersecting&&(i.target.classList.add("section-visible"),t.unobserve(i.target))})},e);this.sections.forEach(n=>{n.classList.add("section-hidden"),t.observe(n)}),this.addCSS()}addCSS(){const e=document.createElement("style");e.textContent=`
+    `,document.head.appendChild(e)}}class u{constructor(e='a[href^="#"]'){this.links=document.querySelectorAll(e),this.init()}init(){this.links.forEach(e=>{e.addEventListener("click",this.handleClick.bind(this))})}handleClick(e){const n=e.currentTarget.getAttribute("href");if(n==="#")return;const i=document.querySelector(n);if(!i)return;e.preventDefault();const s=document.querySelector("#navbar"),o=s?s.offsetHeight:0,c=i.getBoundingClientRect().top+window.scrollY;window.scrollTo({top:c-o-20,behavior:"smooth"})}}class g{constructor(e){this.buttons=document.querySelectorAll(e),this.init()}init(){this.buttons.forEach(e=>{e.style.transition="all 0.2s cubic-bezier(0.22, 1, 0.36, 1)",e.addEventListener("mousedown",this.handleMouseDown.bind(this)),e.addEventListener("mouseup",this.handleMouseUp.bind(this)),e.addEventListener("mouseleave",this.handleMouseUp.bind(this))})}handleMouseDown(e){const t=e.currentTarget;t.style.transform="scale(0.98)",t.style.opacity="0.95"}handleMouseUp(e){const t=e.currentTarget;t.style.transform="scale(1)",t.style.opacity="1"}}class v{constructor(){this.init()}init(){document.querySelectorAll("img").forEach(t=>{t.complete?t.classList.add("loaded"):t.addEventListener("load",()=>{t.classList.add("loaded")})}),setTimeout(()=>{const t=document.querySelector(".hero");t&&t.classList.add("loaded")},300)}}class f{constructor(){this.sections=document.querySelectorAll("section:not(.hero)"),this.init()}init(){const e={threshold:.15,rootMargin:"0px 0px -10% 0px"},t=new IntersectionObserver(n=>{n.forEach(i=>{i.isIntersecting&&(i.target.classList.add("section-visible"),t.unobserve(i.target))})},e);this.sections.forEach(n=>{n.classList.add("section-hidden"),t.observe(n)}),this.addCSS()}addCSS(){const e=document.createElement("style");e.textContent=`
       .section-hidden {
         opacity: 0;
         transform: translateY(10px);
@@ -375,4 +384,4 @@ A Novel Multi-Modal Few-Shot Learning Approach for Diagnosing Cantú Syndrome</h
         opacity: 1;
         transform: translateY(0);
       }
-    `,document.head.appendChild(e)}}document.addEventListener("DOMContentLoaded",()=>{new d("#navbar ul li a, .footer-nav a"),new h("[data-parallax]"),new m,new u,new g(".btn"),new p(".featured-img"),new v,new f});
+    `,document.head.appendChild(e)}}document.addEventListener("DOMContentLoaded",()=>{new d("#navbar ul li a, .footer-nav a"),new h("[data-parallax]"),new p,new u,new g(".btn"),new m(".featured-img"),new v,new f});
