@@ -245,7 +245,7 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
               Designed lesson plans for all four contest areas
             </p>
             <p class="activity-item">
-              Gave lectures to over 150 middle school students weekly
+              Gave lectures to over 150 middle school students
             </p>
           </div>
         </div>
