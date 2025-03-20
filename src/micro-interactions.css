@@ -1,6 +1,3 @@
-/* Micro-interactions CSS for subtle UI enhancements */
-
-/* Button hover effects */
 .btn {
   position: relative;
   overflow: hidden;
@@ -26,7 +23,6 @@
   background: rgba(var(--accent-color-rgb), 0.05);
 }
 
-/* Card hover effects */
 .project-card, .activity-card, .honor-card, .contact-item {
   transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
               box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1),
@@ -48,7 +44,6 @@
   opacity: 1;
 }
 
-/* Image hover effects */
 .project-image {
   position: relative;
   overflow: hidden;
@@ -70,13 +65,11 @@
   opacity: 1;
 }
 
-/* Text selection highlight */
 ::selection {
   background-color: rgba(var(--accent-color-rgb), 0.2);
   color: var(--text-color);
 }
 
-/* Subtle grainy texture for dark mode */
 [data-theme="dark"] body::before {
   content: '';
   position: fixed;
@@ -87,12 +80,10 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' fill='%23ffffff'/%3E%3C/svg%3E");
 }
 
-/* Subtle link hover effect */
 #navbar ul li a, .footer-nav a {
   position: relative;
 }
 
-/* Section title animation */
 .section-title {
   position: relative;
 }
@@ -113,7 +104,6 @@ section:hover .section-title::after {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Smooth image loading effect */
 img {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -123,7 +113,6 @@ img.loaded {
   opacity: 1;
 }
 
-/* Social link hover animation */
 .social-links a {
   display: inline-flex;
   justify-content: center;
@@ -152,7 +141,6 @@ img.loaded {
   transform: scale(1.3);
 }
 
-/* Subtle card stack effect */
 .project-card, .activity-card, .honor-card {
   position: relative;
 }
@@ -174,7 +162,6 @@ img.loaded {
   transform: translateY(0);
 }
 
-/* Loading bar effect */
 .hero::after {
   content: '';
   position: absolute;
@@ -190,17 +177,14 @@ img.loaded {
   width: 100%;
 }
 
-/* Cursor effect for buttons */
 .btn {
   cursor: pointer;
 }
 
-/* Button active state */
 .btn:active {
   transform: translateY(1px);
 }
 
-/* Project links subtle arrow animation */
 .project-actions .btn {
   position: relative;
   padding-right: 36px;
@@ -225,7 +209,6 @@ img.loaded {
   transform: translateX(0);
 }
 
-/* Make the utility variables accessible for JS */
 :root {
   --accent-color-rgb: 0, 119, 237;
 }
