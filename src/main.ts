@@ -225,10 +225,10 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
               connections.
             </p>
             <p class="activity-item">
-              Designed and developed a responsive website for 200+ members
+              Designed and developed a responsive website for 500+ members
             </p>
             <p class="activity-item">
-              Collaborated with leadership to align technological solutions
+              Collaborated with leadership to develop technological solutions
             </p>
           </div>
         </div>
