@@ -111,7 +111,7 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
         to solve complex problems and create innovative solutions.
       </p>
       <div class="hero-actions">
-        <a href="#" class="btn">Download Resume</a>
+        <a href="https://docs.google.com/document/d/18XYdDKNV10nyZLEdO2pYDnkGcUBozix0bFGVojpsxJU/edit?usp=sharing" class="btn">View Resume</a>
         <a href="#contact" class="btn secondary">Contact Me</a>
       </div>
       <div class="social-links">
