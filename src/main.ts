@@ -158,7 +158,7 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
         <div class="about-highlight">
           <h3 class="highlight-title">My Areas of Interest</h3>
           <p class="highlight-text">
-            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science, Quantitative trading, Cybersecurity 
+            Machine Learning, Computational Biology, Robotics, Software Engineering, Data Science, Quantitative Finance, Cybersecurity 
           </p>
         </div>
       </div>
