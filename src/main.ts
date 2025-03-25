@@ -13,7 +13,7 @@ function setupThemeToggle() {
         : 'fa-solid fa-moon';
     }
   }
- 
+
   themeToggle?.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -28,7 +28,7 @@ function setupThemeToggle() {
         : 'fa-solid fa-moon';
     }
   });
-} 
+}
 
 function setupMobileMenu() {
   const navbarUl = document.querySelector('#navbar ul');
@@ -225,10 +225,10 @@ document.querySelector<HTMLDivElement>('#root')!.innerHTML = `
               connections.
             </p>
             <p class="activity-item">
-              Designed and developed a responsive website for 500+ members
+              Designed and developed a responsive website for 200+ members
             </p>
             <p class="activity-item">
-              Collaborated with leadership to develop technological solutions
+              Collaborated with leadership to align technological solutions
             </p>
           </div>
         </div>
