@@ -28,7 +28,7 @@ function setupThemeToggle() {
         : 'fa-solid fa-moon';
     }
   });
-}
+} 
 
 function setupMobileMenu() {
   const navbarUl = document.querySelector('#navbar ul');
